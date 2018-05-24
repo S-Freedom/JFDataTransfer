@@ -50,6 +50,27 @@
 			remoteGlobalIDString = A69A235D20B67FD000714B28;
 			remoteInfo = JFDataTransfer;
 		};
+		A69A241420B683B300714B28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A69A240E20B683B200714B28 /* JFKeyedArchive.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A69A23D920B683B000714B28;
+			remoteInfo = JFKeyedArchive;
+		};
+		A69A241620B683B300714B28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A69A240E20B683B200714B28 /* JFKeyedArchive.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A69A23F120B683B100714B28;
+			remoteInfo = JFKeyedArchiveTests;
+		};
+		A69A241820B683B300714B28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A69A240E20B683B200714B28 /* JFKeyedArchive.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A69A23FC20B683B100714B28;
+			remoteInfo = JFKeyedArchiveUITests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +131,7 @@
 		A69A23BB20B680B700714B28 /* JFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFBaseViewController.h; sourceTree = "<group>"; };
 		A69A23BC20B680B700714B28 /* JFSocketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFSocketViewController.m; sourceTree = "<group>"; };
 		A69A23BD20B680B700714B28 /* JFKeyChainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFKeyChainViewController.h; sourceTree = "<group>"; };
+		A69A240E20B683B200714B28 /* JFKeyedArchive.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JFKeyedArchive.xcodeproj; path = JFKeyedArchive/JFKeyedArchive.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +182,7 @@
 		A69A236020B67FD000714B28 /* JFDataTransfer */ = {
 			isa = PBXGroup;
 			children = (
+				A69A240E20B683B200714B28 /* JFKeyedArchive.xcodeproj */,
 				A69A23B120B680B600714B28 /* 111.pdf */,
 				A69A23BB20B680B700714B28 /* JFBaseViewController.h */,
 				A69A239420B680B600714B28 /* JFBaseViewController.m */,
@@ -238,6 +261,16 @@
 				A69A23AF20B680B600714B28 /* MASViewAttribute.m */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		A69A240F20B683B200714B28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A69A241520B683B300714B28 /* JFKeyedArchive.app */,
+				A69A241720B683B300714B28 /* JFKeyedArchiveTests.xctest */,
+				A69A241920B683B300714B28 /* JFKeyedArchiveUITests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +367,12 @@
 			mainGroup = A69A235520B67FD000714B28;
 			productRefGroup = A69A235F20B67FD000714B28 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A69A240F20B683B200714B28 /* Products */;
+					ProjectRef = A69A240E20B683B200714B28 /* JFKeyedArchive.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A69A235D20B67FD000714B28 /* JFDataTransfer */,
@@ -342,6 +381,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A69A241520B683B300714B28 /* JFKeyedArchive.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = JFKeyedArchive.app;
+			remoteRef = A69A241420B683B300714B28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A69A241720B683B300714B28 /* JFKeyedArchiveTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = JFKeyedArchiveTests.xctest;
+			remoteRef = A69A241620B683B300714B28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A69A241920B683B300714B28 /* JFKeyedArchiveUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = JFKeyedArchiveUITests.xctest;
+			remoteRef = A69A241820B683B300714B28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A69A235C20B67FD000714B28 /* Resources */ = {
