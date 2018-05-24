@@ -1,6 +1,6 @@
 # JFDataTransfer
 1. UIPasteboard
-    使用很简单，请参考API
+   使用很简单，请参考API
 
 2.Keychain
 Keychain 介绍
@@ -11,7 +11,7 @@ Keychain 可以包含任意数量的 keychain item。每一个 keychain item 包
 
 跟keychain item有关系的取决于item的类型；应用程序中最常用的是网络密码（Internet passwrods）和普通的密码。正如你所想的，网络密码像安全域（security domain）、协议、和路径等一些属性。在OSX中，当keychain被锁的时候加密的item没办法访问，如果你想要该问被锁的item，就会弹出一个对话框，需要你输入对应keychain的密码。当然，未有密码的keychain你可以随时访问。但在iOS中，你只可以访问你自已的keychain items;
 
-item可以指定为以下的类型：
+item可以指定为以下的类型： 
 extern CFTypeRef kSecClassGenericPassword
 extern CFTypeRef kSecClassInternetPassword
 extern CFTypeRef kSecClassCertificate
@@ -21,18 +21,24 @@ extern CFTypeRef kSecClassIdentity OSX_AVAILABLE_STARTING(MAC_10_7, __IPHONE_2_0
 Keychain的使用
 大多数iOS应用需要用到Keychain， 都用来添加一个密码，修改一个已存在Keychain item或者取回密码。Keychain提供了以下的操作
 
-SecItemAdd 添加一个item
-SecItemUpdate 更新已存在的item
-SecItemCopyMatching 搜索一个已存在的item
-SecItemDelete 删除一个keychain item
+SecItemAdd 添加一个item 
+
+SecItemUpdate 更新已存在的item 
+
+SecItemCopyMatching 搜索一个已存在的item 
+
+SecItemDelete 删除一个keychain item 
+
 
 Keychain 共享数据
 先开启Keychain share,选中项目的Target -> Capabilities -> Keychain Groups。打开这个选项。
+
 同时在你的项目会生成一个entitlements文件。里面会有Access group，在我的项目中的值是
+
 $(AppIdentifierPrefix)com.jf.JFDataTransfer
 
 AppIdentifierPrefix表示发布者的一个身份，这个可以在苹果开发者后台可以找得到。
-可以从在Info.plist文件中新增一组key-value 
+可以从在Info.plist文件中新增一组key-value
 Key: AppIdentifierPrefix
 Value: $(AppIdentifierPrefix)
 
